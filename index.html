@@ -1,0 +1,17 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#176d64"><title>三つの情｜中国語スピーチ練習</title><link rel="stylesheet" href="style.css"></head><body>
+<main><header><span class="brand">声にして、伝える。</span><span class="tag">中国語スピーチ練習</span></header>
+<div class="heading"><div><p class="eyebrow">SPEECH PRACTICE</p><h1 lang="zh-CN">亲情・友情・爱情</h1><p class="sub">聞いて、声にして。ひとつのフレーズから。</p></div><span class="seal" aria-hidden="true">情</span></div>
+<div class="layout"><section class="player"><div class="section-head"><span id="sectionTitle"></span><span id="count"></span></div><progress id="progress" max="14" value="1"></progress>
+<label class="display-choice">字幕の表示 <select id="displayMode"><option value="both">中国語＋ピンイン</option><option value="zh">中国語のみ</option><option value="ja">中国語＋日本語</option><option value="jaOnly">日本語のみ</option><option value="all">すべて表示</option><option value="none">字幕なし</option></select></label>
+<div id="phrases" class="phrases"></div>
+<div class="control-dock">
+<div id="status" role="status" aria-live="polite">音声を準備しています</div>
+<button id="enableAudio" hidden>タップして音声を開始</button>
+<div class="playback-modes" role="group" aria-label="再生モード"><button id="continuousMode" aria-pressed="true" class="selected">連続モード</button><button id="repeatMode" aria-pressed="false">区間リピート</button></div><input id="loop" type="checkbox" hidden>
+<button id="shuffle">⤨ シャッフル</button>
+<div class="transport"><button id="prev" aria-label="前のブロック">← 前</button><button id="play" class="primary">■ 停止</button><button id="next" aria-label="次のブロック">次 →</button></div>
+</div>
+<details class="practice-settings"><summary>練習設定</summary>
+<div class="settings"><label class="check"><input id="gap" type="checkbox"> 再生後に練習時間</label><label>長さ <select id="gapLength"><option value="1">音声と同じ</option><option value="1.5">音声の1.5倍</option><option value="2">音声の2倍</option></select></label><label>速度 <select id="speed"><option value="0.7">0.7×</option><option value="0.85">0.85×</option><option value="1" selected>1.0×</option><option value="1.15">1.15×</option></select></label></div>
+<label class="voice-label">中国語の声 <select id="voice"></select></label><p>ブロックの表示と同時に再生します。「連続モード」は次のブロックへ進み、「区間リピート」は同じブロックを繰り返します。シャッフル後もモードは維持されます。</p><p>各フレーズをタップすると、その部分だけを再生します。「再生後に練習時間」をオンにすると、フレーズごとに声に出す時間が入ります。「再開」は表示中のブロックの冒頭から再生します。</p><p>端末の中国語合成音声を使っています。発音や間の取り方は、先生の指導も参考にしてください。声の種類や再生動作は端末・ブラウザにより異なります。</p><p>ピンインは「一・不」の変調を反映しています。課題文の文字・句読点は変更していません。</p></details></section>
+<aside><details class="block-picker"><summary>練習するところ <span>全14ブロック</span></summary><nav id="sections" aria-label="練習範囲"></nav></details><div class="tip">少しずつ、字幕を減らす。<p>読み方を確かめたら「中国語」へ。慣れたら「字幕なし」で話してみましょう。</p></div></aside></div><footer>聞く → 自分で話す → もう一度 <span>参考音声は合成音声です</span></footer></main><script src="data.js"></script><script src="app.js"></script></body></html>
